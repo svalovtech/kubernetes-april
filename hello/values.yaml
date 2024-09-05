@@ -1,0 +1,15 @@
+image:
+  repository: nginx
+  tag: "latest"
+deployment:
+  name: nginx
+  replicas: 3 
+  container:
+    nginx:
+      port: 80
+
+
+service:
+  name: nginx-service 
+  port: 80  
+  type: NodePort   
